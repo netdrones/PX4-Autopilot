@@ -154,15 +154,16 @@ private:
 	bool _deny_mission_landing{false};
 
 	DEFINE_PARAMETERS(
-		(ParamFloat<px4::params::RTL_RETURN_ALT>) _param_rtl_return_alt,
+		(ParamFloat<px4::params::RTL_RETURN_ALT>)  _param_rtl_return_alt,
 		(ParamFloat<px4::params::RTL_DESCEND_ALT>) _param_rtl_descend_alt,
-		(ParamFloat<px4::params::RTL_LAND_DELAY>) _param_rtl_land_delay,
-		(ParamFloat<px4::params::RTL_MIN_DIST>) _param_rtl_min_dist,
-		(ParamInt<px4::params::RTL_TYPE>) _param_rtl_type,
-		(ParamInt<px4::params::RTL_CONE_ANG>) _param_rtl_cone_half_angle_deg,
-		(ParamFloat<px4::params::RTL_FLT_TIME>) _param_rtl_flt_time,
-		(ParamInt<px4::params::RTL_PLD_MD>) _param_rtl_pld_md,
-		(ParamFloat<px4::params::RTL_LOITER_RAD>) _param_rtl_loiter_rad
+		(ParamFloat<px4::params::RTL_LAND_DELAY>)  _param_rtl_land_delay,
+		(ParamFloat<px4::params::RTL_MIN_DIST>)    _param_rtl_min_dist,
+		(ParamInt<px4::params::RTL_TYPE>)          _param_rtl_type,
+		(ParamInt<px4::params::RTL_CONE_ANG>)      _param_rtl_cone_half_angle_deg,
+		(ParamFloat<px4::params::RTL_FLT_TIME>)    _param_rtl_flt_time,
+		(ParamInt<px4::params::RTL_PLD_MD>)        _param_rtl_pld_md,
+		(ParamFloat<px4::params::RTL_LOITER_RAD>)  _param_rtl_loiter_rad,
+		(ParamInt<px4::params::RTL_HDG_MD>)        _param_rtl_hdg_md
 	)
 
 	// These need to point at different parameters depending on vehicle type.

@@ -173,3 +173,15 @@ PARAM_DEFINE_INT32(RTL_PLD_MD, 0);
  * @group Return Mode
  */
 PARAM_DEFINE_FLOAT(RTL_LOITER_RAD, 50.0f);
+
+/**
+ * RTL heading mode
+ *
+ * Allow heading in direction of navigation, use current, or use destination heading during transition to destination position.
+ *
+ * @value 0 Heading change in the direction of navigation.
+ * @value 1 Heading matches destination.
+ * @value 2 Use current heading.
+ * @group Return To Land
+ */
+PARAM_DEFINE_INT32(RTL_HDG_MD, 0);
