@@ -27,68 +27,87 @@
 #####
 rtps:
   # topic ID 1
-  #- msg:     debug_array
-  #  receive: true
+  - msg:     debug_array
+    receive: true
   # topic ID 2
-  #- msg:     debug_key_value
-  #  receive: true
+  - msg:     debug_key_value
+    receive: true
   # topic ID 3
-  #- msg:     debug_value
-  #  receive: true
-  # ...
-  #- msg:     debug_vect
-  #  receive: true
+  - msg:     debug_value
+    receive: true
+  # topic ID 4
+  - msg:     debug_vect
+    receive: true
+  # topic ID 5
   - msg:     offboard_control_mode
     receive: true
+  # topic ID 6
   - msg:     sensor_optical_flow
     receive: true
+  # topic ID 7
   - msg:     position_setpoint
     receive: true
+  # topic ID 8
   - msg:     position_setpoint_triplet
     receive: true
+  # topic ID 9
   - msg:     telemetry_status
     receive: true
+  # topic ID 10
   - msg:     timesync
     receive: true
     send:    true
+  # topic ID 11
   - msg:     trajectory_waypoint
     send:    true
+  # topic ID 12
   - msg:     vehicle_command
     receive: true
+  # topic ID 13
   - msg:     vehicle_control_mode
     send:    true
+  # topic ID 14
   - msg:     vehicle_local_position_setpoint
     receive: true
+  # topic ID 15
   - msg:     trajectory_setpoint
     receive: true
+  # topic ID 16
   - msg:     vehicle_odometry
     send:    true
-  #- msg:     vehicle_mocap_odometry # multi-topic / alias of vehicle_odometry
-  #base:    vehicle_odometry
+  # topic ID 17
+  - msg:     vehicle_mocap_odometry # multi-topic / alias of vehicle_odometry
+    base:    vehicle_odometry
   #  receive: true
+  # topic ID 18
   - msg:     vehicle_visual_odometry # multi-topic / alias of vehicle_odometry
     base:    vehicle_odometry
     receive: true
+  # topic ID 19
   - msg:     vehicle_status
     send:    true
+  # topic ID 20
   - msg:     vehicle_trajectory_waypoint
     receive: true
+  # topic ID 21
   - msg:     vehicle_trajectory_waypoint_desired # multi-topic / alias of vehicle_trajectory_waypoint
     base:    vehicle_trajectory_waypoint
     send:    true
+  # topic ID 22
   - msg:     collision_constraints
     send:    true
+  # topic ID 23
   - msg:     onboard_computer_status
     receive: true
+  # topic ID 24
   - msg:     trajectory_bezier
     receive: true
+  # topic ID 25
   - msg:     vehicle_trajectory_bezier
     receive: true
+  # topic ID 26
   - msg:     timesync_status
     send:    true
-  #- msg:     sensor_combined
-  #  send:    true
-  - msg:    vehicle_imu
-    send:   true
-  - msg:    vehicle_imu_status
-    send:   true
+  # topic ID 27
+  - msg:     sensor_combined
+    send:    true
