@@ -1,0 +1,12 @@
+#!/bin/sh
+#
+# @name NetDrones Humblebee V1
+#
+# @type Quadrotor
+#
+# @maintainer Rakuto Furutani <rakuto@netdrones.ai>
+#
+
+. ${R}etc/init.d/rc.mc_defaults
+
+set MIXER quad_w
