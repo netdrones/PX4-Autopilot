@@ -138,6 +138,7 @@ trap "cleanup" SIGINT SIGTERM EXIT
 
 if [[ -n "$HEADLESS" ]]; then
   echo "not running gazebo GUI"
+  wait
 else
   echo "Starting gazebo client"
   gzclient
