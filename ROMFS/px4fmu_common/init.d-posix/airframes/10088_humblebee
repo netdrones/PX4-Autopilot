@@ -7,16 +7,7 @@
 # @maintainer Rakuto Furutani <rakuto@netdrones.ai>
 #
 
-. ${R}etc/init.d/rc.mc_defaults
+. ${R}etc/init.d/airframes/10088_humblebee
 
 # EKF2: Vision position and heading
-param set-default EKF2_AID_MASK 280
-param set-default EKF2_EV_DELAY 5
-
-# LPE: Vision + baro
-param set-default LPE_FUSION 132
-
-# AEQ: External heading set to use vision input
-param set-default ATT_EXT_HDG_M 1
-
-set MIXER quad_w
+param set-default EKF2_EV_DELAY 0

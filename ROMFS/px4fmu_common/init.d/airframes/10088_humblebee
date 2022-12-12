@@ -1,0 +1,35 @@
+#!/bin/sh
+#
+# @name NetDrones Humblebee V1
+#
+# @type Quadrotor
+# @class Copter
+#
+# @output MAIN1 motor 1
+# @output MAIN2 motor 2
+# @output MAIN3 motor 3
+# @output MAIN4 motor 4
+#
+# @maintainer Rakuto Furutani <rakuto@netdrones.ai>
+#
+
+. ${R}etc/init.d/rc.mc_defaults
+
+# EKF2 parameters
+param set-default EKF2_AID_MASK 24
+param set-default EKF2_EV_DELAY 5
+
+# MAVLink
+param set-default MAV_0_RATE 0
+param set-default RTPS_MAV_CONFIG 102
+
+# LPE: Vision + baro
+param set-default LPE_FUSION 132
+
+# AEQ: External heading set to use vision input
+param set-default ATT_EXT_HDG_M 1
+
+# Logging Parameters
+param set-default SDLOG_PROFILE 131
+
+set MIXER quad_w
