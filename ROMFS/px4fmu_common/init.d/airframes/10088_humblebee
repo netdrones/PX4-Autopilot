@@ -21,7 +21,7 @@ param set-default EKF2_EV_DELAY 5
 
 # MAVLink
 param set-default MAV_0_RATE 0
-param set-default RTPS_MAV_CONFIG 102
+#param set-default RTPS_MAV_CONFIG 102
 
 # LPE: Vision + baro
 param set-default LPE_FUSION 132
